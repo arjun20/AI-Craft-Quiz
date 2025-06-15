@@ -1,3 +1,4 @@
+README.md
 setup.py
 mcqgenrator.egg-info/PKG-INFO
 mcqgenrator.egg-info/SOURCES.txt

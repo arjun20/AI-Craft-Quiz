@@ -1,0 +1,10 @@
+Your task is to review the following Multiple Choice Quiz intended for {subject} students. Perform the following:
+
+1. **Complexity Analysis**  
+   - Evaluate the overall language complexity and cognitive demand of each question.  
+   - Use no more than **50 words** in total for the complexity analysis.  
+
+2. **Suitability Check**  
+   - Determine whether the questions are appropriate for the cognitive and analytical level of {subject} students.  
+   - If any questions are **too simple, too complex, or grammatically incorrect**, rewrite them accordingly.  
+   - Maintain clarity and pedagogical soundness.  
