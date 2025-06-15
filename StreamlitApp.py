@@ -8,14 +8,23 @@ import streamlit as st
 from dotenv import load_dotenv
 from langchain.callbacks import get_openai_callback
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+# sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__)))
+print("Base Path :", BASE_DIR)
+
+PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, "..", ".."))
+print("Base Path :", PROJECT_ROOT)
+
+file_path = os.path.join(BASE_DIR, "Response.json")
+print("File Path : ",file_path)
+# /Users/arjun/Desktop/MCQ Generator/Response.json
 from mcqgenerator.utils import read_file, get_table_data
 from mcqgenerator.MCQGenerator import generate_evaluation_chain
 from mcqgenerator.logger import logging
     #mcqgenerator
 
-with open("/Users/arjun/Desktop/MCQ Generator/experiment/Response.json", "r") as file: 
+with open(file_path, "r") as file: 
     RESPONSE_JSON = json.load(file)
 
 st.title("MCG GENERATOR APPLICATION")

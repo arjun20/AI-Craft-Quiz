@@ -21,8 +21,16 @@ llm = ChatOpenAI(
     temperature=0.7
 )
 
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__)))
+print("Base Path :", BASE_DIR)
 
-with open("/Users/arjun/Desktop/MCQ Generator/experiment/Response.json", "r") as f:
+PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, "..", ".."))
+print("Base Path :", PROJECT_ROOT)
+
+file_path = os.path.join(PROJECT_ROOT, "Response.json")
+print("File Path : ",file_path)
+
+with open(file_path, "r") as f:
     RESPONSE_JSON = json.load(f)
 
 TEMPLATE = """
